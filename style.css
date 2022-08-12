@@ -95,3 +95,34 @@ body {
   bottom: -4px;
   left: 20px;
 }
+
+#hero {
+  background-image: url("/img/pikwizard-coffee-writing-computer-blogging.jpg");
+  height: 89vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 5.5rem;
+}
+
+#hero h4 {
+  padding-bottom: 15px;
+}
+
+#hero h1 {
+  color: #088178;
+}
+
+#hero button {
+  color: #088178;
+  background-color: #d1f1ff;
+  padding: 15px 25px;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+}
