@@ -43,6 +43,10 @@ p {
   padding: 40px 240px;
 }
 
+.section-p2 {
+  padding: 40px 80px;
+}
+
 .section-m1 {
   margin: 40px 0;
 }
@@ -165,7 +169,7 @@ body {
 }
 
 #feature .fe-box:hover {
-  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.15);
 }
 
 #feature .fe-box img {
@@ -328,4 +332,137 @@ body {
 #banner button:hover {
   background: #d7a54a;
   color: #fff;
+}
+
+#sm-banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#sm-banner .banner-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: flex-start;
+  padding-left: 1rem;
+  background-image: url("https://www.shoppingbalneario.com.br/wp-content/uploads/2022/03/blog.jpg");
+  width: 49%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 15px;
+}
+
+#sm-banner .banner-box:nth-child(2) {
+  background-image: url("https://images.unsplash.com/photo-1524672353063-4f66ee1f385e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+}
+
+#sm-banner .banner-box::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  border-radius: 15px;
+}
+
+#sm-banner .banner-box h4 {
+  z-index: 10;
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+#sm-banner .banner-box h2 {
+  z-index: 10;
+  color: #fff;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+#sm-banner .banner-box span {
+  z-index: 10;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+#sm-banner .banner-box button {
+  z-index: 10;
+  color: #fff;
+  background: none;
+  border: 1px solid #fff;
+  padding: 1rem 1.4rem;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#sm-banner .banner-box button:hover {
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #fdb444;
+}
+
+#sm-banner .banner-box:nth-child(2) button:hover {
+  color: #52bdb3;
+}
+
+#banner3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+#banner3 .banners {
+  width: 30%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#banner3 .banners::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#banner3 .banners:nth-child(1) {
+  background-image: url("https://images.unsplash.com/photo-1481824429379-07aa5e5b0739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=696&q=80");
+}
+
+#banner3 .banners:nth-child(2) {
+  background-image: url("https://images.unsplash.com/photo-1541089404510-5c9a779841fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+}
+
+#banner3 .banners:nth-child(3) {
+  background-image: url("https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+}
+
+#banner3 .banners h2 {
+  z-index: 10;
+  color: #fff;
+}
+
+#banner3 .banners h4 {
+  z-index: 10;
+  color: rgb(255, 84, 84);
 }
