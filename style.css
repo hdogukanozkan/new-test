@@ -119,7 +119,7 @@ body {
 }
 
 #hero {
-  background-image: url("/img/pikwizard-coffee-writing-computer-blogging.jpg");
+  background-image: url("img/pikwizard-coffee-writing-computer-blogging.jpg");
   height: 89vh;
   width: 100%;
   background-position: center;
