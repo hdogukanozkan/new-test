@@ -1,5 +1,11 @@
-let yokuz = document.querySelectorAll("all");
+const bar = document.querySelector("#bar");
+const navbar = document.querySelector("#navbar");
+const close = document.querySelector("#close");
 
-yokuz.forEach((element) => {
-  console.log(element);
+bar.addEventListener("click", () => {
+  navbar.classList.add("active");
+});
+
+close.addEventListener("click", () => {
+  navbar.classList.remove("active");
 });
