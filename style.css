@@ -778,12 +778,15 @@ body {
   #product1 .pro {
     width: 80%;
   }
+
   h2 {
     font-size: 33px;
   }
+
   #banner h2 {
     font-size: 27px;
   }
+
   #banner button {
     width: 134px;
     height: 39px;
@@ -805,5 +808,8 @@ body {
 
   #header {
     padding: 10px 20px;
+  }
+  #hero {
+    padding-top: 3rem;
   }
 }
