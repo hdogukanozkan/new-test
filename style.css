@@ -591,6 +591,75 @@ body {
   color: #f36f;
 }
 
+/* SHOP.HTML*/
+
+#page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  padding: 10rem 0;
+  background: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/0f9b6589694601.5dfcb7f367996.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#page-header h2 {
+  color: #fff;
+  z-index: 99;
+  font-size: 4.4rem;
+}
+
+#page-header h4 {
+  color: #fff;
+  z-index: 99;
+  margin-top: 1rem;
+  font-weight: 200;
+}
+
+#page-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+#pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+#pagination a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #088178;
+  background-color: #088178;
+  color: #fff;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 19px;
+}
+
+#pagination a:hover {
+  transform: scale(1.1);
+}
+
+#pagination a:active {
+  opacity: 0.85;
+}
+
 @media (max-width: 1750px) {
   .section-p1 {
     padding: 40px 120px;
