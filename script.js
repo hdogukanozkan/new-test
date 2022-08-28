@@ -88,7 +88,7 @@ pro.forEach((element) => {
 
 /*  ÜRÜN SAYFASI  */
 
-function detaysayfasiolustur() {
+function detaysayfasiolustur(element) {
   prodetails.innerHTML = `
   <div class="single-pro-image">
           <img src="img/urunler/urun1.jpg" width="100%" id="MainImg" alt="" />
@@ -129,8 +129,8 @@ function detaysayfasiolustur() {
         </div>
         <div class="single-pro-details">
           <h6>Home / T-Shirt</h6>
-          <h4>Men's Fashion T Shirt</h4>
-          <h3>$139.00</h3>
+          <h4>${element.Urun_Ismi}</h4>
+          <h3>$${element.Urun_Fiyati}</h3>
           <select>
             <option>Select Size</option>
             <option>XL</option>
