@@ -133,5 +133,16 @@
     </section>
 
     <script src="script.js"></script>
+
+    <script>
+      const smal_img = document.querySelectorAll(".small-img");
+      const MainImg = document.querySelector("#MainImg");
+
+      smal_img.forEach((element) => {
+        element.addEventListener("click", () => {
+          MainImg.src = element.src;
+        });
+      });
+    </script>
   </body>
 </html>

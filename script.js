@@ -2,6 +2,7 @@ const bar = document.querySelector("#bar");
 const navbar = document.querySelector("#navbar");
 const close = document.querySelector("#close");
 const xx = document.querySelector(".pro-container");
+const prodetails = document.querySelector("#prodetails");
 
 bar.addEventListener("click", () => {
   navbar.classList.add("active");
@@ -42,18 +43,19 @@ const products = [
 
 /*  SHOP.HTML   */
 
-products.forEach((element) => {
-  yarat(element);
-});
-
 function yarat(element) {
   const div = document.createElement("div");
   div.classList.add("pro");
   div.innerHTML = `
-          <div class="cerceve">
-            <img src="${element.Urun_KapakFotografi}" alt="" />
-          </div>
+            <div class="cerceve">
+          <a href="sproduct.html">
+
+              <img src="${element.Urun_KapakFotografi}" alt="" />
+          </a>
+
+            </div>
           <div class="des">
+            <small class="btsn">${element.Urun_Kodu}</small>
             <span>${element.Urun_Markasi}</span>
             <h5>${element.Urun_Ismi}</h5>
             <div class="star">
@@ -70,4 +72,91 @@ function yarat(element) {
           </a>
   `;
   xx.appendChild(div);
+}
+
+products.forEach((element) => {
+  yarat(element);
+});
+
+const pro = document.querySelectorAll(".pro");
+
+pro.forEach((element) => {
+  element.addEventListener("click", () => {
+    detaysayfasiolustur(element);
+  });
+});
+
+/*  ÜRÜN SAYFASI  */
+
+function detaysayfasiolustur() {
+  prodetails.innerHTML = `
+  <div class="single-pro-image">
+          <img src="img/urunler/urun1.jpg" width="100%" id="MainImg" alt="" />
+          <div class="small-img-group">
+            <div class="small-img-col">
+              <img
+                src="img/urunler/urun1.jpg"
+                width="100%"
+                class="small-img"
+                alt=""
+              />
+            </div>
+            <div class="small-img-col">
+              <img
+                src="img/urunler/urun2.jpg"
+                width="100%"
+                class="small-img"
+                alt=""
+              />
+            </div>
+            <div class="small-img-col">
+              <img
+                src="img/urunler/urun3.jpg"
+                width="100%"
+                class="small-img"
+                alt=""
+              />
+            </div>
+            <div class="small-img-col">
+              <img
+                src="img/urunler/urun4.jpg"
+                width="100%"
+                class="small-img"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="single-pro-details">
+          <h6>Home / T-Shirt</h6>
+          <h4>Men's Fashion T Shirt</h4>
+          <h3>$139.00</h3>
+          <select>
+            <option>Select Size</option>
+            <option>XL</option>
+            <option>XXL</option>
+            <option>Small</option>
+            <option>Large</option>
+            <option>Medium</option>
+          </select>
+          <input type="number" name="" value="1" id="" />
+          <button>Add To Cart</button>
+          <br />
+          <small>Code: <span>001</span></small>
+          <h4 class="detailss">Product Details</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            nesciunt consequuntur inventore officia facere? Possimus molestiae
+            atque eveniet debitis est veritatis sapiente tenetur et voluptatibus,
+            vero natus quam reprehenderit expedita nesciunt odit consequuntur
+            totam harum libero commodi a consequatur adipisci cumque. Quod quae,
+            ullam illo, sed neque porro aut ipsa eos nemo harum a nobis expedita.
+            Sint corrupti placeat, assumenda excepturi deleniti minima illum,
+            incidunt veritatis qui itaque est perspiciatis iusto quas ea modi
+            fugiat consequatur tempore maxime ipsam minus iure perferendis
+            officiis quibusdam. Iure sapiente quidem accusamus voluptatem esse ex
+            vero? Exercitationem eligendi non porro eveniet ex, deleniti pariatur.
+          </p>
+        </div>
+  `;
 }

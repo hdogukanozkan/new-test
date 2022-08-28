@@ -230,7 +230,7 @@ body {
   width: 23%;
   min-width: 250px;
   padding: 10px 12px;
-  border-radius: 25px;
+  border-radius: 5px;
   border: 1px solid #cce7d0;
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
@@ -246,58 +246,73 @@ body {
 #product1 .pro .cerceve {
   overflow: hidden;
   transition: 0.3s ease;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 #product1 .pro .cerceve img:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 
 #product1 .pro img {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 5px;
   transition: 0.3s ease;
+  vertical-align: middle;
 }
 
 #product1 .pro .des {
+  position: relative;
   text-align: start;
   padding: 10px 0;
 }
 
+#product1 .pro .des .btsn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
 #product1 .pro .des span {
   color: #666063;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 #product1 .pro .des h5 {
   padding-top: 7px;
   color: #1a1a1a;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 #product1 .pro .des .star i {
   color: rgb(230, 216, 29);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 #product1 .pro .des h4 {
-  padding-top: 7px;
-  font-size: 15px;
+  padding-top: 10px;
+  font-size: 18px;
   font-weight: 700;
   color: #088178;
 }
 
 #product1 .pro .cardw {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
   border-radius: 50px;
   background-color: #e8f6ea;
   color: #088178;
   border: 1px solid #cce7d0;
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   right: 10px;
+  font-size: 19px;
+  transition: 0.3s ease;
+}
+
+#product1 .pro .cardw:hover {
+  color: white;
+  background-color: #088178;
 }
 
 #banner {
@@ -660,6 +675,97 @@ body {
   opacity: 0.85;
 }
 
+#prodetails {
+  display: flex;
+  margin-top: 20px;
+}
+
+#prodetails .single-pro-image {
+  width: 30%;
+  margin-right: 50px;
+}
+
+#prodetails .single-pro-image .small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+#prodetails .single-pro-image .small-img-group .small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#prodetails .single-pro-details {
+  width: 50%;
+  padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4 {
+  font-size: 2.5rem;
+  padding: 20px 0 20px 0;
+}
+
+#prodetails .single-pro-details h3 {
+  font-size: 1.5rem;
+}
+
+#prodetails .single-pro-details select {
+  display: block;
+  padding: 5px 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#prodetails .single-pro-details input[type="number"] {
+  width: 50px;
+  height: 45px;
+  text-align: center;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+#prodetails
+  .single-pro-details
+  input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#prodetails .single-pro-details input[type="number"]:focus {
+  outline: none;
+}
+
+#prodetails .single-pro-details button {
+  background-color: #088178;
+  color: #fff;
+  font-size: 19px;
+  padding: 18px 25px;
+  border: 2px solid #088178;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 700;
+}
+#prodetails .single-pro-details p {
+  line-height: 25px;
+  font-size: 17.5px;
+  margin: 10px 0;
+}
+
+#prodetails .single-pro-details small {
+  display: block;
+  margin-top: 2rem;
+}
+
+#prodetails .single-pro-details .detailss {
+  padding: 0;
+}
+
+#prodetails .single-pro-details button:hover {
+  color: #088178;
+  background-color: white;
+}
+
 @media (max-width: 1750px) {
   .section-p1 {
     padding: 40px 120px;
@@ -718,6 +824,23 @@ body {
 }
 
 @media (max-width: 799px) {
+  #prodetails .single-pro-image {
+    width: 50%;
+  }
+
+  #prodetails .single-pro-details h4 {
+    font-size: 1.8rem;
+  }
+
+  #prodetails .single-pro-details button {
+    padding: 12px 17px;
+    font-size: 17px;
+  }
+
+  #prodetails .single-pro-details select {
+    font-size: 17px;
+  }
+
   #navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -824,6 +947,20 @@ body {
 }
 
 @media (max-width: 580px) {
+  #prodetails {
+    flex-direction: column;
+  }
+
+  #prodetails .single-pro-image {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  #prodetails .single-pro-details {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
   .section-p1 {
     padding: 10px 0;
   }
