@@ -11,6 +11,10 @@
   font-family: "League Spartan", sans-serif;
 }
 
+body{
+  user-select: none;
+}
+
 h1 {
   font-size: 50px;
   line-height: 64px;
@@ -270,6 +274,7 @@ body {
   position: absolute;
   top: 5px;
   right: 5px;
+  opacity: 0;
 }
 
 #product1 .pro .des span {
@@ -715,6 +720,7 @@ body {
   margin-top: 15px;
   margin-bottom: 15px;
   font-size: 18px;
+  outline: none;
 }
 
 #prodetails .single-pro-details input[type="number"] {

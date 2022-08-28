@@ -135,14 +135,31 @@
     <script src="script.js"></script>
 
     <script>
-      const smal_img = document.querySelectorAll(".small-img");
-      const MainImg = document.querySelector("#MainImg");
+      window.onload = run;
+      function run(){
+        const smal_img = document.querySelectorAll(".small-img");
+        const MainImg = document.querySelector("#MainImg");
 
-      smal_img.forEach((element) => {
-        element.addEventListener("click", () => {
-          MainImg.src = element.src;
+        console.log(smal_img)
+        console.log(MainImg)
+
+
+        smal_img.forEach((element) => {
+          element.addEventListener("click", () => {
+            MainImg.src = element.src;
+          });
         });
-      });
+      }
+      
+
+      deger3 = localStorage["keysims1"];
+      console.log(deger3)
+      codeAddress();
+        function codeAddress(){
+          detaysayfasiolustur(products[deger3]);
+        }
+        
+      
     </script>
   </body>
 </html>
